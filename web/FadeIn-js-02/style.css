@@ -1,0 +1,13 @@
+.js-fadein {
+  opacity: 0; 
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 1s;
+  height: 700px;
+}
+
+.js-fadein.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}

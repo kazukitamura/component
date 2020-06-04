@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 50px 25px;
+  }
+  li{
+    width: 48%;
+    margin: 0 0 100px;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .fadeInUp {
+    opacity : 0;
+    transform: translateY(20px);
+    transition: 1s;
+  }

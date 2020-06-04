@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ハンバーガーメニュー</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <!-- <script src="sample.js"></script> -->
+    <!-- bodyのケツで読み込まないと動作しない。DOMが完成していないからか？ -->
+</head>
+
+<body>
+    <div id="wrap">
+
+        <header class="pfix">
+
+            <nav class="nav" id="nav_f">
+
+                <ul>
+
+                    <li>
+                        <a href="#one" class="list">one</a>
+                    </li>
+
+                    <li>
+                        <a href="#two" class="list">two</a>
+                    </li>
+
+                    <li>
+                        <a href="#three" class="list">three</a>
+                    </li>
+
+                    <li>
+                        <a href="#four" class="list">four</a>
+                    </li>
+
+                    <li>
+                        <a href="#five" class="list">five</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="target">
+
+                <div class="target_inner">
+
+                    <span class="target_inner_line target_inner_1" id="line1"></span>
+
+                    <span class="target_inner_line target_inner_2" id="line2"></span>
+
+                    <span class="target_inner_line target_inner_3" id="line3"></span>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+
+            <section style="background: #efa2c2;">
+
+                <h2 id="one">one</h2>
+            </section>
+
+            <section style="background: #7bd1e0;">
+
+                <h2 id="two">two</h2>
+            </section>
+
+            <section style="background: #fc9967;">
+
+                <h2 id="three">three</h2>
+            </section>
+
+            <section style="background: #5ecfad;">
+
+                <h2 id="four">four</h2>
+            </section>
+
+            <section style="background: #fff6a1;">
+
+                <h2 id="five">five</h2>
+            </section>
+        </main>
+    </div>
+    <script src="sample.js"></script>
+</body>
+
+</html>
