@@ -115,19 +115,6 @@ a:hover img {
 	position: relative;
 }
 
-.row:before, .row:after {
-	content: "";
-	display: table;
-}
-
-.row:after {
-	clear: both;
-}
-
-.row {
-	zoom: 1;
-}
-
 .m-auto {
 	margin-left: auto;
 	margin-right: auto;
