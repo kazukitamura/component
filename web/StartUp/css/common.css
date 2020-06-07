@@ -38,6 +38,31 @@ table {
 	border-spacing: 0;
 }
 
+.table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: left;
+	color: #111;
+	letter-spacing: 0;
+	border-top: 1px solid #999;
+}
+
+.table tr {
+	border-bottom: 1px solid #999;
+}
+
+.table th {
+	padding: 8px 25px;
+	vertical-align: middle;
+	background: rgba(0, 0, 0, .05);
+	border: 1px solid #999;
+}
+
+.table td {
+	padding: 8px 25px;
+	border: 1px solid #999;
+}
+
 figure {
 	margin: 0;
 }
