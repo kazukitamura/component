@@ -1,11 +1,12 @@
 $(function(){
     function animation(){
+      //eachで順番にliの要素へ働きかけている
       $('.fadeInUp').each(function(){
         //ターゲットの位置を取得
         var target = $(this).offset().top;
         //スクロール量を取得
         var scroll = $(window).scrollTop();
-        //ウィンドウの高さを取得
+        //ウィンドウの高さを取得。繰り返し処理内で常に一定
         var windowHeight = $(window).height();
         //ターゲットまでスクロールするとフェードインする
         if (scroll > target - windowHeight){
