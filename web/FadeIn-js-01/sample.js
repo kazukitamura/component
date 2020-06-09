@@ -6,7 +6,7 @@ $(function(){
         var target = $(this).offset().top;
         //スクロール量を取得
         var scroll = $(window).scrollTop();
-        //ウィンドウの高さを取得。繰り返し処理内で常に一定
+        //ウィンドウの高さを取得。繰り返し処理内で常に一定の値
         var windowHeight = $(window).height();
         //ターゲットまでスクロールするとフェードインする
         if (scroll > target - windowHeight){
