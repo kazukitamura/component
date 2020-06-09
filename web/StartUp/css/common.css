@@ -123,7 +123,6 @@ a:hover img {
 	overflow: hidden;
 }
 
-
 /*=================================================
 
 		共通設定
@@ -420,50 +419,6 @@ a:hover img {
 	margin: 10px;
 }
 
-.mb-10 {
-	margin-bottom: 10px;
-}
-
-.mb-20 {
-	margin-bottom: 20px;
-}
-
-.mb-30 {
-	margin-bottom: 30px;
-}
-
-.mb-40 {
-	margin-bottom: 40px;
-}
-
-.mb-50 {
-	margin-bottom: 50px;
-}
-
-.mb-60 {
-	margin-bottom: 60px;
-}
-
-.mb-70 {
-	margin-bottom: 70px;
-}
-
-.mb-80 {
-	margin-bottom: 80px;
-}
-
-.mb-90 {
-	margin-bottom: 90px;
-}
-
-.mb-100 {
-	margin-bottom: 100px;
-}
-
-.mt--10 {
-	margin-top: -10px;
-}
-
 .mt-10 {
 	margin-top: 10px;
 }
@@ -508,6 +463,51 @@ a:hover img {
 	margin-top: 100px;
 }
 
+.mt--10 {
+	margin-top: -10px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.mb-60 {
+	margin-bottom: 60px;
+}
+
+.mb-70 {
+	margin-bottom: 70px;
+}
+
+.mb-80 {
+	margin-bottom: 80px;
+}
+
+.mb-90 {
+	margin-bottom: 90px;
+}
+
+.mb-100 {
+	margin-bottom: 100px;
+}
+
+
 .ml-10 {
 	margin-left: 10px;
 }
@@ -550,6 +550,10 @@ a:hover img {
 
 .mr-40 {
 	margin-right: 40px;
+}
+
+.mr-50 {
+	margin-right: 50px;
 }
 
 .mt--30 {
@@ -634,13 +638,13 @@ header {
 	color: #FFFFFF;
 }
 
-.logo {
+.header-logo {
 	position: relative;
 	z-index: 100;
 	line-height: 1;
 }
 
-.logo img {
+.header-logo img {
 	height: 180px;
 }
 
@@ -761,55 +765,21 @@ footer {
 	letter-spacing: 0.03em;
 	position: relative;
 	color: #FFF;
-	border-top: #7D2426 6px solid;
-	background: url(../images/parts/footer-back.jpg) top center repeat;
-}
-
-.footer-content {
-	padding: 50px 0 30px;
-	text-align: center;
+	background-color: #010032;
 }
 
 .footer-logo {
 	padding-bottom: 20px;
 }
 
-.footer-content p {
-	font-size: 15px;
-	letter-spacing: 0;
-}
-
-.footer-text p {
-	color: #FFF;
-}
-
-.footer-menu {
-	width: 100%;
-	text-align: center;
-	padding: 80px 0 20px;
-	color: #1D1A13;
-}
-
-.footer-menu li {
-	display: inline-block;
-	font-size: 16px;
-}
-
-.footer-menu li a {
-	padding: 10px 20px 0;
-	color: #1D1A13;
-}
-
-.footer-menu li a:hover {
-	color: #444;
-	text-decoration: underline;
+.footer-logo img {
+	height: 180px;
 }
 
 .copyright {
 	padding: 20px 0;
 	text-align: center;
 	margin-top: -5px;
-	background: #070604;
 	letter-spacing: 0;
 	line-height: 1;
 }
