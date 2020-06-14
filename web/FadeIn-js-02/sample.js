@@ -9,7 +9,8 @@ function showElementAnimation() {
   var windowH = window.innerHeight; //ブラウザウィンドウのビューポート(viewport)の高さを取得
                     
   for(var i=0;i<element.length;i++) { 
-    //ウィンドウ座標はウィンドウの左上端から始まります。メソッド elem.getBoundingClientRect() はプロパティを持つオブジェクトとして elem に対するウィンドウ座標を返します。
+    //ウィンドウ座標はウィンドウの左上端から始まります。
+    //メソッド elem.getBoundingClientRect() はプロパティを持つオブジェクトとして elem に対するウィンドウ座標を返します。
     var elemClientRect = element[i].getBoundingClientRect();
     var elemY = scrollY + elemClientRect.top; 
     if(scrollY + windowH - showTiming > elemY) {
