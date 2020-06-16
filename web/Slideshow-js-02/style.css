@@ -1,0 +1,16 @@
+.showbox {
+  display: inline-block;
+}
+.showbox p {
+  text-align: center;
+}
+.showbox img {
+  border: 2px solid #00a;
+  display: block;
+}
+#slidecaption {
+  background-color: #00a;
+  color: white;
+  font-weight: bold;
+  display: block;
+}
