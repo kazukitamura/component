@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "デリゲート", "デリゲート\デリゲート.csproj", "{7AD68189-739B-42B4-8F96-20FA47402C68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AD68189-739B-42B4-8F96-20FA47402C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD68189-739B-42B4-8F96-20FA47402C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD68189-739B-42B4-8F96-20FA47402C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD68189-739B-42B4-8F96-20FA47402C68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C19A1E4-4FE8-464A-B712-865DF7089F7B}
+	EndGlobalSection
+EndGlobal
