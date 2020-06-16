@@ -1,0 +1,9 @@
+.showbox {
+  display: inline-block;
+}
+.showbox p {
+  text-align: center;
+}
+.showbox img {
+  border: 2px solid skyblue;
+}
