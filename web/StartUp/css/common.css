@@ -79,6 +79,48 @@ iframe, video {
 
 /*=====================================================
 
+		フォント
+
+======================================================*/
+
+@font-face {
+	font-family: "Hannari";
+	font-style: normal;
+	font-weight: normal;
+	src: url("font/hannari.woff2") format('woff2'), url("font/hannari.woff") format('woff'), url("font/hannari.eot?") format('eot'), url("font/hannari.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: "Hannari-tate";
+	font-style: normal;
+	font-weight: normal;
+	src: url("font/Hannari-tate.woff2") format('woff2'), url("font/Hannari-tate.woff") format('woff'), url("font/Hannari-tate.eot?") format('eot'), url("font/Hannari-tate.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: "ipa";
+	font-style: normal;
+	font-weight: normal;
+	src: url("font/ipa.woff2") format('woff2'), url("font/ipa.woff") format('woff'), url("font/ipa.eot?") format('eot'), url("font/ipa.ttf") format('truetype');
+}
+
+body {
+	font-family: "Hannari", "Hannari-tate", "ipa", Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+	letter-spacing: 0.1rem;
+	line-height: 1.5;
+}
+
+.font-large {
+	font-size: 1.2rem;
+}
+
+.table-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+/*=====================================================
+
 		メイン設定
 
 ======================================================*/
@@ -173,6 +215,20 @@ a:hover img {
 	float: right;
 }
 
+.inline-block {
+	display: inline-block;
+}
+
+.inline-block-top {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.inline-block-middle {
+	display: inline-block;
+	vertical-align: middle;
+}
+
 /*=================================================
 
 		横幅
@@ -183,12 +239,24 @@ a:hover img {
 	width: 20%;
 }
 
+.w32p {
+	width: 32%;
+}
+
 .w45p {
 	width: 45%;
 }
 
 .w48p {
 	width: 48%;
+}
+
+.w50p {
+	width: 50%;
+}
+
+.w80p {
+	width: 80%;
 }
 
 .w125 {
@@ -261,13 +329,23 @@ a:hover img {
 
 /*=================================================
 
+		高さ
+
+==================================================*/
+
+.h600 {
+	height: 600px;
+}
+
+/*=================================================
+
 		画像サイズ
 
 ==================================================*/
 
 .eye-catch {
 	width: 100%;
-	max-height: 700px;
+	max-height: 650px;
 }
 
 .header-logo img {
@@ -286,12 +364,20 @@ a:hover img {
 	width: 700px;
 }
 
+.img-semilarge {
+	width: 550px; 
+}
+
 .img-middle {
 	width: 400px;
 }
 
 .img-small {
 	width: 200px;
+}
+
+video {
+	object-fit: cover;
 }
 
 /*=================================================
@@ -416,6 +502,10 @@ a:hover img {
 	padding-left: 10px;
 }
 
+.pl-10p {
+	padding-left: 10%;
+}
+
 .pl-15 {
 	padding-left: 15px;
 }
@@ -446,6 +536,10 @@ a:hover img {
 
 .pr-20p {
 	padding-right: 20%;
+}
+
+.pr-30 {
+	padding-right: 22px;
 }
 
 /*=================================================
@@ -566,6 +660,10 @@ a:hover img {
 	margin-left: 50px;
 }
 
+.ml-50p {
+	margin-left: 50%;
+}
+
 .ml-80 {
 	margin-left: 80px;
 }
@@ -665,18 +763,22 @@ header {
 .header-text {
 	position: absolute;
 	display: inline-block;
-	top: 50%;
+	top: 40%;
 }
 
 .g_menu {
 	position: absolute;
 	display: inline-block;
-	bottom: 5px;
+	bottom: 10px;
 	right: 10px;
 }
 
 .g_menu ul li {
 	float: left;
+}
+
+.g_menu ul li a {
+	font-size: 1.1rem;
 }
 
 .g_menu li:last-child {
@@ -761,12 +863,17 @@ header {
 footer {
 	overflow: hidden;
 	width: 100%;
-	height: 240px;
+	height: 300px;
 	margin-top: 50px;
 	letter-spacing: 0.03em;
 	position: relative;
 	color: #FFF;
 	background-color: #010032;
+}
+
+.footer-wrap {
+	width: 900px;
+	margin: 0 auto;
 }
 
 .footer-logo {
@@ -805,17 +912,51 @@ footer {
 }
 
 .car:before {
-	content: url(../images/8.access/car.jpg);
+	content: url(../images/8.access/car.PNG);
 	margin: 10px;
 	position: relative;
 	top: 8px;
 }
 
 .train:before {
-	content: url(../images/8.access/train.jpg);
+	content: url(../images/8.access/train.png);
 	margin: 10px;
 	position: relative;
 	top: 8px;
+}
+
+/*=================================================
+
+		周辺案内
+
+==================================================*/
+
+.hiking-img {
+	margin: 0 auto 60px !important;
+}
+
+.sight-title {
+    border-bottom: 3px solid #010032;
+}
+
+/*=================================================
+
+		日本庭園
+
+==================================================*/
+
+.bgr-gray {
+	background-color: #f0f0f0;
+}
+
+/*=================================================
+
+		客室
+
+==================================================*/
+
+.bgr-gray-normal {
+	background-color: #d8d8d8;
 }
 
 /*=================================================
@@ -824,3 +965,151 @@ footer {
 
 ==================================================*/
 
+.flex-center {
+	margin: 0 auto 60px auto !important;
+}
+
+/*=================================================
+
+		お問い合わせ
+
+==================================================*/
+
+.contact-title {
+    border-bottom: 3px solid #010032;
+}
+
+#demo ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#demo li {
+	list-style: none;
+	margin: 0;
+	padding: 6px;
+	clear: both;
+}
+
+#demo label {
+	display: block;
+	font-weight: bold;
+	color: #666;
+}
+
+#demo li span label {
+	color: #999;
+	font-weight: normal;
+	font-size: 80%;
+}
+
+#demo input.field, #demo textarea {
+	border: 1px solid #ddd;
+	border-top-color: #ccc;
+	border-left-color: #ccc;
+	padding: 3px;
+}
+
+#demo #name {
+	width: 100%;
+	height: 50px;
+}
+
+#demo #email {
+	width: 100%;
+	height: 50px;
+}
+
+#demo textarea {
+	width: 100%;
+	height: 300px;
+}
+
+#demo #btn_submit {
+	width: 100px;
+	height: auto;
+}
+
+/*=================================================
+
+		空室検索
+
+==================================================*/
+
+.search-wrapper {
+	width: 100%;
+	height: 130px;
+	background: url("../images/parts/search-back.jpg") center center no-repeat;
+}
+
+.search {
+	z-index: 100;
+}
+
+.search-wrap {
+	width: 1180px;
+	margin: 0 auto;
+	text-align: left;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 50;
+	padding-top: 7px;
+	background-color: #010032;
+	color: white;
+}
+
+.search-title {
+	float: left;
+	width: 260px;
+	text-align: center;
+}
+
+.search-title h3 {
+	padding-top: 38px;
+}
+
+.search-form {
+	width: 920px;
+	height: 116px;
+	padding: 20px 0 0 25px;
+	box-sizing: border-box;
+	float: right;
+}
+
+.search-form p {
+	float: left;
+	padding: 5px 7px;
+	font-size: 14px;
+	color: white;
+	display: inline-table;
+}
+
+.search-form p input, .search-form p select {
+	margin-left: 10px;
+	padding: 3px;
+	vertical-align: middle;
+}
+
+.search-left {
+	float: left;
+	width: 655px;
+}
+
+.search-right {
+	float: right;
+	padding-top: 13px;
+	padding-right: 28px;
+}
+
+.submit_btn {
+	border: 0px;
+	width: 160px;
+	height: 56px;
+	background: url(../images/img/top/search-btn.png) left top no-repeat;
+}
+
+.submit_btn:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
