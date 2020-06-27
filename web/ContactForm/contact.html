@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+
+    <title>ご予約・お問い合わせ</title>
+
+    <!-- /////////// 外部ファイル呼び込み /////////// -->
+    <link rel="stylesheet" href="common.css">
+
+</head>
+
+<body>
+
+    <div class="m-auto w1040">
+
+        <h2 class="mt-70 contact-title">お問い合わせフォーム</h2>
+
+        <form id="demo" class="m-auto w1040" action="#" onsubmit="return false;">
+            <ul>
+                <li>
+                    <label for="name">お名前：</label>
+                    <input id="name" class="name" name="firstname" type="text" class="field" value="" maxlength="20"
+                        tabindex="1" />
+
+                </li>
+                <li>
+                    <label for="email">メールアドレス：</label>
+                    <input id="email" name="email" type="text" class="field" value="" maxlength="255" tabindex="3" />
+                </li>
+                <li>
+                    <label for="message">メッセージ：</label>
+                    <textarea id="message" name="message" rows="10" cols="5" tabindex="4"></textarea>
+                </li>
+            </ul>
+            <div class="center">
+                <input id="btn_submit" name="btn_submit" value="送信" type="submit" />
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
