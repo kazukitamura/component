@@ -16,6 +16,9 @@ namespace Validation
         public static MyData SetData(string[] lineData)
         {
             MyData data = new MyData();
+            data.Job = lineData[0];
+            data.Age = lineData[1];
+            data.Remarks = lineData[2];
             return data;
         }
     }
