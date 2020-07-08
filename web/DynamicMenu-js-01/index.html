@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>マウスオーバー時にメニューリストを表示</title>
+    <script language="JavaScript">
+    
+    function openMenu(n) {            //リストを開く
+        closeMenu()            //表示中のリストを閉じる
+        if(n == 1) {            //リスト１を開く
+            li1.style.display = "block";
+        }
+        else if(n == 2) {        //リスト２を開く
+            li2.style.display = "block";
+        }
+        else if(n == 3) {        //リスト３を開く
+            li3.style.display = "block";
+        }
+    }
+    function closeMenu() {            //リストを閉じる
+        li1.style.display = "none";
+        li2.style.display = "none";
+        li3.style.display = "none";
+    }
+    //-->
+    </script>
+    <style type="text/css">
+    <!--
+    #menu    {
+        margin:        10px;
+        padding:    0px;
+        position:    relative;
+    }
+    #menu1    {
+        width:        600px;        /*　メニュー全体の幅　*/
+        height:        30px;        /*　メニューの高さ　*/
+        background:    #fcc;        /*　背景色　*/
+        text-align:    center;        /*　センタリング　*/
+        cursor:        hand;        /*　カーソルの形　*/
+    }
+    #li1, #li2, #li3    {
+        position:    absolute;
+        width:        200px;        /*　リストの幅　*/
+        background:    #fff;        /*　背景色　*/
+        display:    none;
+    }
+    #li1    {
+        top:        29;        /*　表示位置　*/
+        left:        0;
+    }
+    #li2    {
+        top:        29;        /*　表示位置　*/
+        left:        200;
+    }
+    #li3    {
+        top:        29;        /*　表示位置　*/
+        left:        400;
+    }
+    a    {
+        padding:    2px;
+        width:        100%;
+        height:        100%;
+        text-decoration:none;        /*　アンダーライン非表示　*/
+    }
+    a:hover    {
+        background:    #fc9;        /*　背景色（マウスオーバー時）　*/
+    }
+    
+    </style>
+</head>
+<body>
+マウスオーバー時にメニューリストを表示<br>
+<br>
+<p id="menu">
+<table id="menu1" border="1" bordercolor="#ff6666" cellspacing="0">
+    <tr>
+    <td onMouseover="openMenu(1)" onMouseout="closeMenu()">メニューリスト１</td>
+    <td onMouseover="openMenu(2)" onMouseout="closeMenu()">メニューリスト２</td>
+    <td onMouseover="openMenu(3)" onMouseout="closeMenu()">メニューリスト３</td>
+    </tr>
+</table>
+<table id="li1" border="1" bordercolor="#ff6666" onMouseover="openMenu(1)" onMouseout="closeMenu()">
+    <tr><td><a href="../../sample/sample1.html">リスト1-1</a></td></tr>
+    <tr><td><a href="../../sample/sample2.html">リスト1-2</a></td></tr>
+    <tr><td><a href="../../sample/sample3.html">リスト1-3</a></td></tr>
+    <tr><td><a href="../../sample/sample1.html">リスト1-4</a></td></tr>
+    <tr><td><a href="../../sample/sample2.html">リスト1-5</a></td></tr>
+</table>
+<table id="li2" border="1" bordercolor="#ff6666" onMouseover="openMenu(2)" onMouseout="closeMenu()">
+    <tr><td><a href="../../sample/sample1.html">リスト2-1</a></td></tr>
+    <tr><td><a href="../../sample/sample2.html">リスト2-2</a></td></tr>
+    <tr><td><a href="../../sample/sample3.html">リスト2-3</a></td></tr>
+</table>
+<table id="li3" border="1" bordercolor="#ff6666" onMouseover="openMenu(3)" onMouseout="closeMenu()">
+    <tr><td><a href="../../sample/sample3.html">リスト3-1</a></td></tr>
+    <tr><td><a href="../../sample/sample2.html">リスト3-2</a></td></tr>
+    <tr><td><a href="../../sample/sample1.html">リスト3-3</a></td></tr>
+    <tr><td><a href="../../sample/sample2.html">リスト3-4</a></td></tr>
+    <tr><td><a href="../../sample/sample3.html">リスト3-5</a></td></tr>
+    <tr><td><a href="../../sample/sample1.html">リスト3-6</a></td></tr>
+    <tr><td><a href="../../sample/sample2.html">リスト3-7</a></td></tr>
+</table>
+</p>
+マウスカーソルが上に来るとメニューが開きます。<br>
+</body>
+</html>
