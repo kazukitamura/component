@@ -1,25 +1,26 @@
 <html>
+
 <head>
-<title>マウスオーバー時にメニューリストを表示</title>
+    <title>マウスオーバー時にメニューリストを表示</title>
     <script language="JavaScript">
-    
-    function openMenu(n) {            //リストを開く
-        closeMenu()            //表示中のリストを閉じる
-        if(n == 1) {            //リスト１を開く
-            li1.style.display = "block";
+
+        function openMenu(n) {            //リストを開く
+            closeMenu()            //表示中のリストを閉じる
+            if (n == 1) {            //リスト１を開く
+                li1.style.display = "block";
+            }
+            else if (n == 2) {        //リスト２を開く
+                li2.style.display = "block";
+            }
+            else if (n == 3) {        //リスト３を開く
+                li3.style.display = "block";
+            }
         }
-        else if(n == 2) {        //リスト２を開く
-            li2.style.display = "block";
+        function closeMenu() {            //リストを閉じる
+            li1.style.display = "none";
+            li2.style.display = "none";
+            li3.style.display = "none";
         }
-        else if(n == 3) {        //リスト３を開く
-            li3.style.display = "block";
-        }
-    }
-    function closeMenu() {            //リストを閉じる
-        li1.style.display = "none";
-        li2.style.display = "none";
-        li3.style.display = "none";
-    }
     //-->
     </script>
     <style type="text/css">
