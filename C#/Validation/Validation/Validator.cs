@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Validation
 {
-    class Validatior
+    class Validator
     {
         private readonly List<IValidation> validationList = new List<IValidation>();
 
@@ -24,6 +24,14 @@ namespace Validation
             {
                 item.Validate();
             }
+        }
+
+        public static Validator CreateValidator(MyData data)
+        {
+            Validator validator = new Validator();
+            validator.ValidationList.Add(new Job(data.Job));
+
+            return validator;
         }
     }
 }
