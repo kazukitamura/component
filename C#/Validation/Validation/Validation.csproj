@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Remarks.cs" />
     <Compile Include="IValidation.cs" />
+    <Compile Include="Age.cs" />
     <Compile Include="Job.cs" />
     <Compile Include="MyData.cs" />
     <Compile Include="Program.cs" />

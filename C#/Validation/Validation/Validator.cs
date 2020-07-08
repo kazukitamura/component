@@ -30,6 +30,8 @@ namespace Validation
         {
             Validator validator = new Validator();
             validator.ValidationList.Add(new Job(data.Job));
+            validator.ValidationList.Add(new Age(data.Age));
+            validator.ValidationList.Add(new Remarks(data.Remarks));
 
             return validator;
         }

@@ -19,12 +19,12 @@ namespace Validation
 
             if (File.Exists(filePath))
             {
-                string line = string.Empty;
-
                 using (StreamReader sr = new StreamReader(filePath, Encoding.GetEncoding("Shift-JIS")))
                 {
                     int i = 0;
                     bool result = true;
+                    string line;
+
                     while ((line = sr.ReadLine()) != null)
                     {
                         string[] lineData = line.Split(',');
