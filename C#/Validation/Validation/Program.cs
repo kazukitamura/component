@@ -35,12 +35,16 @@ namespace Validation
                             throw new Exception();
                         }
 
+                        //配列をMyDataクラスのメンバへ代入。
                         MyData data = MyData.SetData(lineData);
 
                         Console.WriteLine("[" + ++i + "レコード目]");
+
+                        //MyDataクラスのメンバをIValidationを実装したリストへ移し替える。
                         Validator validator = Validator.CreateValidator(data);
                         try
                         {
+                            //ポリモーフィズム。IValidationインターフェースを実装したクラス毎にヴァリデーション定義がされている。
                             validator.Validate();
                         }
                         catch (Exception ex)
