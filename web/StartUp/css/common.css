@@ -114,9 +114,17 @@ body {
 	font-size: 1.2rem;
 }
 
+.font-small {
+	font-size: 0.8rem;
+}
+
 .table-title {
 	font-size: 1.2rem;
 	font-weight: bold;
+}
+
+.f-18 {
+	font-size: 18px;
 }
 
 /*=====================================================
@@ -327,6 +335,14 @@ a:hover img {
 	width: 1040px;
 }
 
+.w1280 {
+	width: 1280px;
+}
+
+.min-w1280 {
+	min-width: 1280px;
+}
+
 /*=================================================
 
 		高さ
@@ -494,6 +510,10 @@ video {
 	padding-bottom: 100px;
 }
 
+.pb-120 {
+	padding-bottom: 120px;
+}
+
 .pl-5 {
 	padding-left: 5px;
 }
@@ -596,6 +616,10 @@ video {
 	margin-top: 100px;
 }
 
+.mt-120 {
+	margin-top: 120px;
+}
+
 .mt--10 {
 	margin-top: -10px;
 }
@@ -638,6 +662,10 @@ video {
 
 .mb-100 {
 	margin-bottom: 100px;
+}
+
+.mb-120 {
+	margin-bottom: 120px;
 }
 
 .ml-10 {
@@ -700,34 +728,7 @@ video {
 	margin-left: -50px;
 }
 
-.letter-none {
-	letter-spacing: 0;
-}
 
-.shadow {
-	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
-	-moz-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
-	-webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
-	-o-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
-	-ms-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-.anchor {
-	padding-top: 120px;
-	margin-top: -120px;
-}
-
-.radius, .radius img {
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-o-border-radius: 10px;
-	-ms-border-radius: 10px;
-}
-
-.f-18 {
-	font-size: 18px;
-}
 
 /*=================================================
 
