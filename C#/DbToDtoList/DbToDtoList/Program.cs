@@ -5,8 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+
 
 namespace DbToDtoList
 {
@@ -16,7 +15,7 @@ namespace DbToDtoList
         {
             public string ItemKey { get; set; }
             public string ItemString { get; set; }
-            public decimal? ItemNumeric { get; set; }
+            public string ItemNumeric { get; set; }
             public DateTime? ItemDate { get; set; }
 
             public TestClass()
@@ -38,19 +37,20 @@ namespace DbToDtoList
                 //SQLコマンド発行
                 using (SqlCommand com = con.CreateCommand())
                 {
-                    System.Text.StringBuilder sql = new StringBuilder();
+                    StringBuilder sql = new StringBuilder();
                     //取得項目名は設定先のクラスプロパティ名へ合わせる
                     sql.AppendLine("SELECT");
-                    sql.AppendLine("ITEMKEY AS ItemKey");
-                    sql.AppendLine(",ITEMSTRING AS ItemString");
-                    sql.AppendLine(",ITEMNUMERIC AS ItemNumeric");
-                    sql.AppendLine(",ITEMDATE AS ItemDate");
+                    sql.AppendLine("tk_cd AS ItemKey");
+                    sql.AppendLine(",name AS ItemString");
+                    sql.AppendLine(",tel_no AS ItemNumeric");
+                    sql.AppendLine(",insert_date_time AS ItemDate");
                     sql.AppendLine("FROM");
-                    sql.AppendLine("Table1");
+                    sql.AppendLine("[Shitaya2019_ka].[dbo].[D11_Tk]");
                     com.CommandText = sql.ToString();
 
                     //SQL取得結果指定クラス格納
                     List<TestClass> rets = DbToPropertys<TestClass>(com);
+                    Console.ReadKey();
                 }
             }
             catch (Exception ex)
@@ -80,9 +80,9 @@ namespace DbToDtoList
                 //認証方法
                 IntegratedSecurity = false,
                 //ユーザー
-                UserID = "ユーザー",
+                UserID = "sa",
                 //パスワード
-                Password = "パスワード"
+                Password = "38369421"
             };
 
             return ret.ToString();
