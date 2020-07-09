@@ -2,6 +2,7 @@
 
 <head>
     <title>マウスオーバー時にメニューリストを表示</title>
+
     <script language="JavaScript">
 
         function openMenu(n) {            //リストを開く
@@ -16,15 +17,17 @@
                 li3.style.display = "block";
             }
         }
+
         function closeMenu() {            //リストを閉じる
             li1.style.display = "none";
             li2.style.display = "none";
             li3.style.display = "none";
         }
-    //-->
+    
     </script>
+
     <style type="text/css">
-    <!--
+
     #menu    {
         margin:        10px;
         padding:    0px;
@@ -41,7 +44,7 @@
         position:    absolute;
         width:        200px;        /*　リストの幅　*/
         background:    #fff;        /*　背景色　*/
-        display:    none;
+        display:    none;           /*　最初は非表示にしておく　*/
     }
     #li1    {
         top:        29;        /*　表示位置　*/
@@ -66,6 +69,7 @@
     }
     
     </style>
+
 </head>
 <body>
 マウスオーバー時にメニューリストを表示<br>
