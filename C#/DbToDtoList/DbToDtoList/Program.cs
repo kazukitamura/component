@@ -40,7 +40,7 @@ namespace DbToDtoList
                     StringBuilder sql = new StringBuilder();
                     //取得項目名は設定先のクラスプロパティ名へ合わせる
                     sql.AppendLine("SELECT");
-                    sql.AppendLine("tk_cd AS ItemKey");
+                    sql.AppendLine("tk_cd AS ITEMKEY");
                     sql.AppendLine(",name AS ItemString");
                     sql.AppendLine(",tel_no AS ItemNumeric");
                     sql.AppendLine(",insert_date_time AS ItemDate");
@@ -116,6 +116,7 @@ namespace DbToDtoList
 
                         //取得結果項目名から設定先プロパティ取得（大文字小文字の区別なし）
                         PropertyInfo property = propertys.Find(x => x.Name.ToUpper().Equals(reader.GetName(cnt).ToUpper()));
+
                         //設定先がない場合次の列へ
                         if (property == null)
                         {
@@ -124,7 +125,7 @@ namespace DbToDtoList
 
                         //設定先プロパティの型を取得（null許容型対応）
                         Type converttype = property.PropertyType.IsGenericType ? Nullable.GetUnderlyingType(property.PropertyType) : property.PropertyType;
-                        //設定先プロパティへ取得結果設定
+                        //設定先プロパティへ取得結果設定。第一引数のt（DTOのメンバ）に、第二引数の値を設定。
                         property.SetValue(t, Convert.ChangeType(reader.GetValue(cnt), converttype));
                     }
 
