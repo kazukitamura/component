@@ -22,11 +22,10 @@ namespace ExcelApp1
             string ExcelBookFileName = textBox1.Text;
             Microsoft.Office.Interop.Excel.Application ExcelApp = new Microsoft.Office.Interop.Excel.Application();
             ExcelApp.Visible = false;
-            Workbook wb = ExcelApp.Workbooks.Open(ExcelBookFileName,
-              Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing,
-              Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing,
-              Type.Missing);
+
+            Workbook wb = ExcelApp.Workbooks.Open(ExcelBookFileName);
             Worksheet ws1 = wb.Sheets[1];
+
             ws1.Select(Type.Missing);
             Range range = ExcelApp.get_Range("A1", Type.Missing);
             if (range != null)
