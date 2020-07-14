@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using Microsoft.Office.Interop.Excel;
 
@@ -26,8 +20,7 @@ namespace ExcelApp1
         private void button2_Click(object sender, EventArgs e)
         {
             string ExcelBookFileName = textBox1.Text;
-            Microsoft.Office.Interop.Excel.Application ExcelApp
-              = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel.Application ExcelApp = new Microsoft.Office.Interop.Excel.Application();
             ExcelApp.Visible = false;
             Workbook wb = ExcelApp.Workbooks.Open(ExcelBookFileName,
               Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing,
